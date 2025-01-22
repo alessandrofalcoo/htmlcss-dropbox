@@ -40,7 +40,13 @@ main{
 }
 
 footer{
+    display: flex;
+    justify-content: space-between;
     color: white;
+    padding: 2rem;
+    ul{
+        list-style: none;
+    }
 }
 
 
@@ -94,6 +100,16 @@ footer{
     }
 }
 
+.content{
+    display: flex;
+    .list-title{
+        margin: 1rem 0;
+        padding: 1rem 0;
+        li{
+            padding-top: 0.5rem;
+        }
+    }
+}
 
 
 
