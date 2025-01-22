@@ -34,6 +34,15 @@ img{
    
 }
 
+main{
+    background-color:blueviolet ;
+    height: 1000px;
+}
+
+footer{
+    color: white;
+}
+
 
 /* #endregion common */
 
@@ -50,6 +59,7 @@ img{
     display: flex;
     justify-content: space-between;
     margin: 0 ;
+    margin-top: 1rem;
     
 }
 
@@ -70,10 +80,21 @@ img{
 
 }
 
-main{
-    background-color:blueviolet ;
-    height: 1000px;
+.partner-img-paragraph{
+    margin-top: 6rem;
+    display: flex;
+    .partner-paragraph{
+        margin-left: 1rem;
+    }
+    .find-partner{
+        margin-top: 1.5rem;
+        padding: 0.25rem;
+        background-color: white;
+        border-color: #343434 ;
+    }
 }
+
+
 
 
 /* #endregion layout */
