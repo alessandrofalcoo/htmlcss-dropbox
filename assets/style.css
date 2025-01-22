@@ -1,5 +1,62 @@
+/* #region common */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --start-button: #0061fe;
+    --jumbotron-section: #b4d0e6;
+}
+
+/* #endregion common */
+
+.debug{
+    border: 1px dashed;
+}
+
+header{
+    display: flex;
+    height: 100%;
+    nav,ul{
+        display: flex;
+        list-style: none;
+        a{
+            text-decoration: none;
+        }
+    }
+    .start{
+        border-style: none;
+        background-color: var(--start-button);
+        color: white;
+    }
+}
+
+.jumbotron{
+    background-color: var(--jumbotron-section);
+    height: 300px;
+    text-align: center;
+}
+
+.white-space{
+    
+    background-color: white;
+    hr{
+        border: rgb(240, 240, 240) 1px;
+        margin-top: 4rem;
+    }
+}
+
+
+main{
+    background-color:blueviolet ;
+    height: 1000px;
+}
+
+footer{
+    background-color: black;
+    height: 250px;
+}
+
