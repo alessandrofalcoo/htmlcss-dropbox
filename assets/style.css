@@ -9,22 +9,88 @@
 :root{
     --start-button: #0061fe;
     --jumbotron-section: #b4d0e6;
+    --border-cards: #dedde0;
 }
+
+.debug{
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    min-height: 120px;
+    background-color: aquamarine;
+}
+
+.row{
+    background-color: brown;
+}
+
+[class^="col"]{
+    background-color: rgb(255, 255, 255);
+   
+}
+
 
 /* #endregion common */
 
-.debug{
-    border: 1px dashed;
+
+/* #region layout */
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 ;
+    
+}
+
+[class^="col"]{
+    padding: 1rem;
+}
+
+.col{
+    width: auto;
+    flex-basis: auto;
+    border: 1px var(--border-cards);
+}
+
+.team{
+    margin-top: 2rem;
+    background-color: burlywood;
+    height: 100px;
+
+}
+
+main{
+    background-color:blueviolet ;
+    height: 1000px;
+}
+
+
+/* #endregion layout */
+
+/* region header */
 
 header{
     display: flex;
-    height: 100%;
+    height: 50px;
     nav,ul{
         display: flex;
         list-style: none;
         a{
             text-decoration: none;
+            :hover{
+                text-decoration: underline;
+            }
         }
     }
     .start{
@@ -33,6 +99,10 @@ header{
         color: white;
     }
 }
+/* endregion header */
+
+
+/* region main */
 
 .jumbotron{
     background-color: var(--jumbotron-section);
@@ -49,11 +119,22 @@ header{
     }
 }
 
-
-main{
-    background-color:blueviolet ;
-    height: 1000px;
+.invoice{
+    display: flex;
+    gap: 1.5rem;
 }
+
+.heading-card{
+    display: flex;
+
+}
+
+
+
+
+/* endregion main */
+
+
 
 footer{
     background-color: black;
