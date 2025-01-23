@@ -19,8 +19,17 @@ body{
     background-color: var(--start-button);
     color: white;
     border: none;
-    padding: 0.4rem;
+    margin-top: 2rem;
+    padding: 1.0rem;
 }
+
+.btn-primary{
+    background-color: var(--start-button);
+    color: white;
+    border: none;
+    padding: 0.5rem;    
+}
+
 
 img{
     max-width: 100%;
@@ -31,7 +40,6 @@ img{
     max-width: 1200px;
     margin: 0 auto;
     min-height: 120px;
-    background-color: aquamarine;
 }
 
 .row{
@@ -41,11 +49,6 @@ img{
 [class^="col"]{
     background-color: rgb(255, 255, 255);
    
-}
-
-main{
-    background-color:blueviolet ;
-    height: 1000px;
 }
 
 footer{
@@ -77,6 +80,9 @@ footer{
     justify-content: flex-end;
     align-items: center;
     gap: 1.5rem;
+    ul{
+        margin-top: 0.5rem;
+    }
     
 }
 
@@ -206,6 +212,7 @@ header{
         list-style: none;
         a{
             text-decoration: none;
+            color: black;
             :hover{
                 text-decoration: underline;
             }
@@ -214,30 +221,48 @@ header{
 }
 /* endregion header */
 
-
-/* region main */
+/* jumbotron */
 
 h1{
-    font-size: 40px;
+    font-size: 100px;
     width: 100%;    
 }
 
 .jumbotron{
     background-color: var(--jumbotron-section);
+    box-shadow: 10px 5px 5px black;
     .box-container{
         display: flex;
         .jumbo-left{
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            padding: 5rem 0 0 0;
+        }    
+        img{
+            padding: 5rem 0 0 0;
+        }
+        span{
+            margin-top: 2rem;
+            font-size: 20px;
+        }
+        p{
+            font-size: 20px;
         }
     }
 }
 
-.jumbo-img{
-    width: 200%;
-    margin: 3rem;
+/* end jumbotron */
+
+hr{
+    background-color: var(--border-cards);
+    margin-top: 6rem;
 }
+
+/* region main */
+
+
+ 
 
 .invoice{
     display: flex;
